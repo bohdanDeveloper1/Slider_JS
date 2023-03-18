@@ -5,26 +5,33 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
     <link rel="stylesheet" href="View.css">
-    <title>Modal Window</title>
 </head>
 <body>
-<h1>Modal window</h1>
+<h1 class = "title">Slider</h1>
 <div class="flex-wrapper">
-<button id="btn-open">Open</button>
-</div>
-
-<div id="wrapper-modal">
-    <div id="overlay"></div>
-    <div id="modal-window">
-       <div>
-           <button id="btn-close">Close modal</button>
-       </div>
-        <div class="content">
-            Some text
+    <div class="slider-wrapper">
+        <div class="slide active">
+            <img src="Images/img_1.jpg" alt="img_1">
         </div>
+        <div class="slide">
+            <img src="Images/img_2.jpg" alt="img_2">
+        </div>
+        <div class="slide">
+            <img src="Images/img_3.jpg" alt="img_3">
+        </div>
+
+        <div id="btn-prev"></div>
+        <div id="btn-next"></div>
     </div>
 </div>
+<div class="dots-wrapper">
+    <span class ="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
 
 
     <script src="Model.js"></script>
