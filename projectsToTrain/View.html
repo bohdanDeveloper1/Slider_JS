@@ -6,26 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="View.css">
-    <title>Document</title>
+    <title>Modal Window</title>
 </head>
 <body>
-<h1>Tabs</h1>
-<div class="tabs-block-wrapper">
-    <div id = 'tabs'>
-        <div class  = 'tab-btn active' data-btn = '1'>1</div>
-        <div class  = 'tab-btn' data-btn = '2'>2</div>
-        <div class  = 'tab-btn' data-btn = '3'>3</div>
-    </div>
-    <div id = 'contents'>
-        <div class = 'content active' data-content='1'>text1</div>
-        <div class = 'content' data-content='2'>text2</div>
-        <div class = 'content' data-content='3'>text3</div>
+<h1>Modal window</h1>
+<div class="flex-wrapper">
+<button id="btn-open">Open</button>
+</div>
+
+<div id="wrapper-modal">
+    <div id="overlay"></div>
+    <div id="modal-window">
+       <div>
+           <button id="btn-close">Close modal</button>
+       </div>
+        <div class="content">
+            Some text
+        </div>
     </div>
 </div>
 
-<div>
-    <button id = "myButton"> Click me </button>
-</div>
 
     <script src="Model.js"></script>
     </body>
